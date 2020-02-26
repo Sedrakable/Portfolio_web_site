@@ -1,5 +1,7 @@
 
+
 <!DOCTYPE html>
+
 <html>
     <head>
         <meta charset="uft-8"/>
@@ -8,6 +10,7 @@
         <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
@@ -15,13 +18,21 @@
             <div class="nav_bar" >
                 <div class="left_side">
                     
+                    <div class="main_logo">
+                        <img src="Logos/my_logo_simple.png"></img>
+                    </div>
+                    
                     <div class="button_wrapper active_button_wrapper">
                         <a href="index.html">Home</a>
                     </div>
 
                     <div class="button_wrapper">
                         <a href="about.html">About</a>
-                    </div>                                  
+                    </div>             
+                    
+                    <div class="button_wrapper">
+                        <a href="projects.html">Projects</a>
+                    </div>      
                 </div>
                 
             </div>
@@ -30,9 +41,8 @@
 
                 
                     <div class="hello_left_box">
-                        <h1>Hello World, welcome to my Portfolio</h1>
+                        <h1>Hello World, welcome to Sedrak's Portfolio</h1>
                         <p>The will be all the information i will provide</p>
-                        <h2> Sedrak Nadzharyan</h2>
                     </div>
 
                     <div class="links">
@@ -57,18 +67,19 @@
                         </div>
                     </div>   
                 
-
                 
             </div>
-
-            <div class="about_grid">
-                <div class="left_art">
-                    <img src="Pictures/boat.png"></img>
-                </div>
-                <div class="about_text"> This is me bla bla bla bla bla blabla bla blabla bla bla
-                    bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla bla
-                    bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla bla
-                    bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla bla!!!
+            
+            <div class="middle_grid">
+                <div class="about_grid">
+                    <div class="left_art">
+                        <img src="Pictures/used/me.png"></img>
+                    </div>
+                    <div class="about_text"> This is me bla bla bla bla bla blabla bla blabla bla bla
+                        bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla bla
+                        bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla bla
+                        bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla bla!!!
+                    </div>
                 </div>
             </div>
         </div>
@@ -79,13 +90,13 @@
         portfolio_items.forEach(item => {
             item.addEventListener('mouseout', () => {
                 console.log(item.childNodes[1].classList);
-                item.childNodes[1].classList.remove('img_darken');
+                item.classList.remove('img_darken');
                 
             })
 
             item.addEventListener('mouseover', () => {
                 console.log(item.childNodes[1].classList);
-                item.childNodes[1].classList.add('img_darken');
+                item.classList.add('img_darken');
                 
             })
         })
